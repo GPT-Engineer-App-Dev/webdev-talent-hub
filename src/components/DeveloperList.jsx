@@ -1,4 +1,4 @@
-import { Box, Button, Container, Heading, HStack, Input, SimpleGrid, Tag, TagLabel, Text } from "@chakra-ui/react";
+import { Box, Button, Container, Heading, HStack, Input, SimpleGrid, Tag, TagLabel, Text, Link as ChakraLink } from "@chakra-ui/react";
 import { useState } from "react";
 
 const developers = [
@@ -7,12 +7,14 @@ const developers = [
     name: "John Smith",
     location: "New York, NY",
     specialties: ["React", "Node.js", "JavaScript"],
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus hendrerit nunc, in vehicula velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean euismod justo eget velit iaculis, a dictum est egestas.",
   },
   {
     id: 2,
     name: "Sarah Johnson",
     location: "San Francisco, CA",
     specialties: ["Python", "Data Science", "Machine Learning"],
+    bio: "Praesent luctus erat eu tincidunt ultricies. Donec vitae faucibus dui. Donec condimentum nunc non eros bibendum, at tincidunt eros suscipit. Maecenas sed interdum sapien, ut vehicula quam. Nulla facilisi. Etiam id libero vel odio imperdiet rhoncus.",
   },
 ];
 
@@ -82,7 +84,7 @@ const DeveloperList = () => {
                   </Tag>
                 ))}
               </HStack>
-              <Button as="a" href={`/developers/${dev.id}`} colorScheme="blue">
+              <Button as={ChakraLink} href={`/developers/${dev.id}`} colorScheme="blue">
                 Contact
               </Button>
             </Box>
