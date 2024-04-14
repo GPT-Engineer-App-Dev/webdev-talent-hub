@@ -17,7 +17,7 @@ const Index = () => {
           <Text fontSize="xl" maxW="600px" color="gray.500">
             Particles is the best place to find and hire top software developers specializing in web technologies like React, Node, .NET, Go and JavaScript.
           </Text>
-          <Button as={Link} href="/developers" size="lg" colorScheme="blue" fontWeight="bold" px={8}>
+          <Button as={Link} to="/developers" size="lg" colorScheme="blue" fontWeight="bold" px={8}>
             View Developer Listings
           </Button>
           <Image src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGRldmVsb3BlcnMlMjB3b3JraW5nfGVufDB8fHx8MTcxMzA0ODY0Nnww&ixlib=rb-4.0.3&q=80&w=1080" alt="Software developers" w="full" maxW="800px" mt={12} />
